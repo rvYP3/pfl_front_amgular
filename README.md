@@ -1,3 +1,10 @@
+esta hecha la conexion al back en netbeans
+falta ingreso de usuario/autenticacion y edicion de portfolio
+se ve que no voy lo suficientemente rapido que debe ir un desarrollador, quizas este es el motivo por no poder entregar el trabajko completo en tiempo y forma.
+igualmente muchas gracias por dedicar su tiemp a que pueda aprender estos conceptos.
+slds.
+
+
 # PflAngularDin
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.4.
