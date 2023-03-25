@@ -1,8 +1,10 @@
-esta hecha la conexion al back en netbeans
-falta ingreso de usuario/autenticacion y edicion de portfolio
-se ve que no voy lo suficientemente rapido que debe ir un desarrollador, quizas este es el motivo por no poder entregar el trabajko completo en tiempo y forma.
-igualmente muchas gracias por dedicar su tiemp a que pueda aprender estos conceptos.
+estimado/s
+esta hecha la conexion entre el front (angular) y el back (netbeans) 
+falta ingreso con usuario y autenticacion y edicion de porfolio
+esta experiencia me ha dejado algunas cosas para reflexionar: el tiempo que dispongo hace que no sea lo suficientemente agil que tendria que ser como desarrollador. quizas este es el motivo que subyace a no poder entregar el trabajo completo en tiempo y forma.
+igualmente les agradezco el tiempo y dedicacion que han tenido como para que pueda aprender e ingresar a este desafiante mundo de la programacion
 slds.
+nota: seguramente termine este trabajo en un futuro con los tiempos/dedicacion que dispongo
 
 
 # PflAngularDin
