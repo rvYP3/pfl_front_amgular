@@ -1,0 +1,87 @@
+<section id="habilidades" class="about titulo2">
+    <div class="card p-5 align-text-center">        
+      <div class="row">
+        <div class="col">
+          <h2 class="marco1"> Habilidades Duras </h2>
+          <!-- Trigger/Agregar -->
+          <div id="agregarHabDur">
+            <li class="list-group list-group-horizontal justify-content-end">
+              <button type="button" class="btn btn-secondary btn-sm p-1" data-bs-toggle="modal" data-bs-target="#habDurModal">
+              <i class="fa-solid fa-plus fa-l"></i></button>
+            </li>
+            <!-- Modal -->
+            <app-m-hab-dura></app-m-hab-dura>
+          </div>
+          <!-- HabilidadesdDuras-->
+          <div id="habDur" class="mb-3 col-11" *ngFor="let habD of habilidadesDuraS">
+            <label><h5>{{habD.nombre}}</h5></label>
+            <!-- <div class="progress mt-0.5">
+              <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 40%" aria-valuemin="0" aria-valuemax="100">40%</div>
+            </div> -->
+            <div class="progress" role="progressbar" aria-label="Example with label" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar" style.width={{habD.porcentaje}}%>{{habD.porcentaje}}%</div>
+            </div>
+            <!--editHabilidadDura-->
+            <div id="editHabDur1"class="row">
+              <div class="container-fluid">
+                <ul class="list-group list-group-horizontal justify-content-end">
+                  <!-- Trigger/Editar -->
+                  <li class="list-group-item">
+                    <button type="button" class="btn btn-secondary btn-sm p-1 boton1" data-bs-toggle="modal" data-bs-target="#habDurModal">
+                      <i class="fa-solid fa-pen fa-l"></i></button>
+                  </li>
+                  <!-- Trigger/Eliminar -->
+                  <li class="list-group-item">
+                    <button type="button" class="btn btn-secondary btn-sm p-1" data-bs-toggle="modal" data-bs-target="#eliminarModal">
+                    <i class="fa-solid fa-trash fa-l"></i></button>
+                  </li>        
+                </ul>
+              </div>
+            </div>
+            <hr>
+          </div>
+        </div>
+        <div class="col">
+          <h2 class="marco1"> Habilidades Blandas </h2>
+          <!-- Trigger/Agregar -->
+          <div id="agregarHabDur">
+            <li class="list-group list-group-horizontal justify-content-end">
+              <button type="button" class="btn btn-secondary btn-sm p-1" data-bs-toggle="modal" data-bs-target="#habBlaModal">
+              <i class="fa-solid fa-plus fa-l"></i></button>
+            </li>
+            <!-- Modal -->
+            <app-m-hab-blanda></app-m-hab-blanda>
+          </div>
+          <!-- HabilidadesBlandas -->
+          <div id="habBla" class="mb-3 col-11" *ngFor="let habB of habilidadesBlandaS">
+            <label><h5>{{habB.nombre}}</h5></label>
+            <div class="progress" role="progressbar" aria-label="Example with label" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar" style.width={{habB.porcentaje}}%>{{habB.porcentaje}}%</div>
+            </div>
+            <!--editHabilidadBlanda-->
+            <div id="editHabBla1"class="row">
+              <div class="container-fluid">
+                <ul class="list-group list-group-horizontal justify-content-end">
+                  <!-- Trigger/Editar -->
+                  <li class="list-group-item">
+                    <button type="button" class="btn btn-secondary btn-sm p-1 boton1" data-bs-toggle="modal" data-bs-target="#habBlaModal">
+                      <i class="fa-solid fa-pen fa-l"></i></button>
+                  </li>
+                  <!-- Trigger/Eliminar -->
+                  <li class="list-group-item">
+                    <button type="button" class="btn btn-secondary btn-sm p-1" data-bs-toggle="modal" data-bs-target="#eliminarModal">
+                    <i class="fa-solid fa-trash fa-l"></i></button>
+                  </li>        
+                </ul>
+              </div>
+            </div> 
+            <hr>
+          </div>
+        </div>
+      </div>
+      <!-- Regreso Botonera-->  
+      <div class="position-absolute bottom-0 end-0">
+        <a href="#navbar"><button class="btn btn-primary btn-md p-2"><i class="fa-solid fa-arrow-turn-up fa-xl"></i></button></a>                
+      </div>
+    </div>
+  </section>

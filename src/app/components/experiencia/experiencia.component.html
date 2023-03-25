@@ -1,0 +1,53 @@
+<section id="experiencia" class="about titulo2">
+    <div class="card p-5 align-text-center">
+      <h2 class="marco1">Experiencia</h2> 
+      <!-- Trigger/Agregar -->
+      <div id="agregarExp">
+        <li class="list-group list-group-horizontal justify-content-end">
+          <!-- <button type="submit" *ngIf=""isLogged" class="btn btn-secondary btn-sm p-1" data-bs-toggle="modal" data-bs-target="#expModal">
+            <i class="fa-solid fa-plus fa-l"></i></button>-->
+          <button type="button" class="btn btn-secondary btn-sm p-1" data-bs-toggle="modal" data-bs-target="#expModal">
+          <i class="fa-solid fa-plus fa-l"></i></button>
+        </li> 
+        <!-- Modal --> 
+        <app-m-experiencia></app-m-experiencia>
+      </div>
+      <!--Experiencias-->
+      <div id="exp" class="row" *ngFor="let exp of experienciaS">
+        <div class="col-3">
+          <img [src]="exp.img" class="w-50 d-inline-block img-fluid" alt="img-Ypf" [title]="exp.titulo">
+          <h6>{{exp.inicio}} | {{exp.fin}}</h6>            
+        </div>
+        <div class="col-9 mr-2">
+          <h4>{{exp.puesto}}</h4>
+          <h6>{{exp.tarea}}</h6>
+        </div>        
+        <!--editExperiencia-->
+        <div id="editExp1"class="row">
+          <div class="container-fluid">
+            <ul class="list-group list-group-horizontal justify-content-end">
+              <!-- Trigger/Editar -->
+              <li class="list-group-item">
+                <!-- <button type="button" *ngIg="isLogged" class="btn btn-secondary btn-sm p-1 boton1" data-bs-toggle="modal" data-bs-target="#expModalEd">
+                  <i class="fa-solid fa-pen fa-l" (click)="editExperiencia(exp.id)"></i></button> -->
+                <button type="button" class="btn btn-secondary btn-sm p-1 boton1" data-bs-toggle="modal" data-bs-target="#expModal">
+                <i class="fa-solid fa-pen fa-l"></i></button>
+              </li>
+              <!-- Trigger/Eliminar -->
+              <li class="list-group-item">
+                <!-- <button type="submit" *ngIg="isLogged" class="btn btn-secondary btn-sm p-1" (click)="deleteExperiencia(exp:Experiencia)">
+                  <i class="fa-solid fa-trash fa-l"></i></button> -->
+                <button type="button" class="btn btn-secondary btn-sm p-1" data-bs-toggle="modal" data-bs-target="#eliminarModal">
+                <i class="fa-solid fa-trash fa-l"></i></button>
+              </li>        
+            </ul>
+          </div>
+        </div>
+        <hr>
+      </div>      
+      <!-- Regreso Botonera-->  
+      <div class="position-absolute bottom-0 end-0">
+        <a href="#navbar"><button class="btn btn-primary btn-md p-2"><i class="fa-solid fa-arrow-turn-up fa-xl"></i></button></a>                
+      </div>
+    </div>
+  </section>

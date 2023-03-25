@@ -1,0 +1,47 @@
+<section id="proyectos" class="about titulo2 mb-4">
+    <div class="card p-5 align-text-center">        
+      <h2 class="marco1">Proyectos</h2>
+      <!-- Trigger/Agregar -->
+      <div id="agregarProy">
+        <li class="list-group list-group-horizontal justify-content-end">
+          <button type="button" class="btn btn-secondary btn-sm p-1" data-bs-toggle="modal" data-bs-target="#proyModal">
+          <i class="fa-solid fa-plus fa-l"></i></button>
+        </li>
+        <!-- Modal -->
+        <app-m-proyecto></app-m-proyecto>
+      </div>
+      <!-- Proyectos -->
+      <div id="proy" class="row" *ngFor="let pro of proyectoS">
+        <div class="col-3">
+          <img [src]="pro.img" class="w-75 d-inline-block img-fluid logo" alt="logo-AP" [title]="pro.titulo">
+          <h6>{{pro.inicio}} | {{pro.fin}}</h6>
+        </div>
+        <div class="col-9 mr-2">
+          <h4>{{pro.tipo}}</h4>
+          <h6>{{pro.detalle}}</h6>
+        </div>        
+        <!--editProyectos-->
+        <div id="editProy1"class="row">
+          <div class="container-fluid">
+            <ul class="list-group list-group-horizontal justify-content-end">
+              <!-- Trigger/Editar -->
+              <li class="list-group-item">
+                <button type="button" class="btn btn-secondary btn-sm p-1" data-bs-toggle="modal" data-bs-target="#proyModal">
+                  <i class="fa-solid fa-pen fa-l"></i></button>
+              </li>
+              <!-- Trigger/Eliminar -->
+              <li class="list-group-item">
+                <button type="button" class="btn btn-secondary btn-sm p-1" data-bs-toggle="modal" data-bs-target="#eliminarModal">
+                <i class="fa-solid fa-trash fa-l"></i></button>
+              </li>        
+            </ul>
+          </div>
+        </div>            
+      </div>
+      <hr>
+      <!-- Regreso Botonera-->  
+      <div class="position-absolute bottom-0 end-0">
+        <a href="#navbar"><button class="btn btn-primary btn-md p-2"><i class="fa-solid fa-arrow-turn-up fa-xl"></i></button></a>                        
+      </div>        
+    </div>             
+  </section>

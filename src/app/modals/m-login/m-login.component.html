@@ -1,0 +1,43 @@
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="loginModalLabel">Login</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+          <!-- Formulario -->
+          <form [formGroup]="form" (ngSubmit)="onEnviar($event)">      
+            <div class="ms-3">
+              <!-- <label for="floatingInputValue" class="form-label">Correo</label> -->
+              <!-- <input type="email" class="form-control" id="floatingInputValue" name="email" placeholder="name@example.com" value="name@domain.com" [class.border-danger]="MailValid" required> -->
+              <label for="email" class="form-label">Correo:</label>
+              <br/>
+              <input type="email" id="email" formControlName="email" [class.border-danger]="MailNoValid">
+
+              <!-- getters en el controlador -->
+              <div *ngIf="Mail?.errors && Mail?.touched">
+                <p *ngIf="Mail?.hasError('required')" class="error">Correo requerido!</p>
+                <p *ngIf="Mail?.hasError('email')" class="error">Formato de correo no valido!</p>
+              </div>
+            </div>
+            <br/>
+            <div class="ms-3">
+              <label for="floatingPassword" class="form-label">Password</label>
+              <br/>
+              <input type="password" id="password" formControlName="password" [class.border-danger]="PasswordNoValid">
+              <!-- <input type="password" formControlName="password" [ngClass]="{'is-invalid':Password?.errors && Password?.touched, 'is-valid':!Password?.errors && Password?.touched}"> -->
+              <!-- getters en el controlador -->
+              <div *ngIf="Password?.errors && Password?.touched">
+                <p *ngIf="Password?.hasError('required')" class="error">Password requerido!</p>              
+                <p *ngIf="Password?.hasError('minlength')" class="error">Password contiene al menos {{Password?.errors?.['minlength'].requiredLength}} caracteres!</p>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <!-- Boton Inicio Sesion -->
+              <button type="submit" class="btn btn-primary">Iniciar Sesion</button>
+            </div>
+          </form>
+          <!-- Fin Formulario -->
+    </div>
+  </div>
+</div>

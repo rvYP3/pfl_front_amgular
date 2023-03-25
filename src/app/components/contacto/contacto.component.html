@@ -1,0 +1,66 @@
+<section id="contacto" class="about titulo2 mb-4">
+    <div class="card p-5 align-text-center">        
+      <h2 class="marco1">Contacto</h2>
+      <!-- Contacto-1 -->
+        <div id="cont1" class="container-fluid">
+          <ul class="list-group list-group-horizontal justify-content-center">
+            <!-- Trigger/Contacto -->
+            <li class="list-group-item">
+              <button type="button" class="btn btn-primary btn-g p-2" data-bs-toggle="collapse" data-bs-target="#collapseUbicacion" aria-expanded="false" aria-controls="collapseUbicacion">
+              <i class="fa-sharp fa-solid fa-location-dot fa-xl"></i></button>                
+            </li> 
+            <li class="list-group-item">
+              <button type="button" class="btn btn-primary btn-g p-2" data-bs-toggle="collapse" data-bs-target="#collapseTelefono" aria-expanded="false" aria-controls="collapseTelefono">
+              <i class="fa-brands fa-whatsapp fa-xl"></i></button>               
+            </li>
+            <li class="list-group-item">
+              <button type="button" class="btn btn-primary btn-g p-2" data-bs-toggle="collapse" data-bs-target="#collapseCorreo" aria-expanded="false" aria-controls="collapseCorreo">
+              <i class="fa-regular fa-envelope fa-xl"></i></button>
+            </li> 
+            <li class="list-group-item">
+              <button type="button" class="btn btn-primary btn-g p-2" data-bs-toggle="modal" data-bs-target="#printModal">
+              <i class="fa-solid fa-file-arrow-down fa-xl"></i></button>
+            </li>
+            <!-- Modal -->
+            <app-m-contacto></app-m-contacto>
+            <!-- Modal -->
+            <app-m-print></app-m-print>
+          </ul> 
+          <div id="con" class="row" *ngFor="let con of contactoS">
+            <div class="collapse collapse-horizontal" id="collapseUbicacion">
+              <div class="card card-body" style="width: auto;">
+                <h6 id="ciudad">{{con.ciudad}}</h6>
+                <h6 id="provincia">{{con.provincia}}</h6>
+              </div>
+            </div>
+            <div class="collapse collapse-horizontal" id="collapseTelefono">
+              <div class="card card-body" style="width: auto;">
+                <h6 id="telefono">{{con.telefono}}</h6>
+              </div>
+            </div>
+            <div class="collapse collapse-horizontal" id="collapseCorreo">
+              <div class="card card-body" style="width: auto;">
+                <h6 id="correo">{{con.correo}}</h6>
+              </div>
+            </div>         
+          </div>   
+        </div>
+        <!--editContacto-->
+        <div id="editCont1"class="row">
+          <div class="container-fluid">
+            <ul class="list-group list-group-horizontal justify-content-end">
+            <!-- Trigger/Contactar -->
+            <li class="list-group-item">
+              <button type="button" class="btn btn-secondary btn-sm p-1" data-bs-toggle="modal" data-bs-target="#contModal">
+                <i class="fa-solid fa-pen fa-l"></i></button>
+            </li>        
+            </ul>
+          </div>
+        </div> 
+        <hr>
+      <!-- Regreso Botonera-->  
+      <div class="position-absolute bottom-0 end-0">
+        <a href="#navbar"><button class="btn btn-primary btn-md p-2"><i class="fa-solid fa-arrow-turn-up fa-xl"></i></button></a>                
+      </div>       
+    </div>             
+  </section>

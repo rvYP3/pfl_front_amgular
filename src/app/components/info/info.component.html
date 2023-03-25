@@ -1,0 +1,43 @@
+<section id="info" class="about titulo2">
+    <div class="card p-5 align-text-center" *ngFor="let per of personaS">
+      <div class="row">
+        <!--Banner-->
+        <img [src]="per.banner" class="img-fluid" alt="img-tech" [title]="per.tituloBanner"> 
+        <!-- Trigger/Banner -->
+        <li class="list-group list-group-horizontal justify-content-end">
+          <button type="button" class="btn btn-secondary btn-sm p-1" data-bs-toggle="modal" data-bs-target="#bannerModal">
+            <i class="fa-solid fa-pen fa-l"></i></button>
+        </li>
+        <!-- Modal -->
+        <app-m-banner></app-m-banner>
+      </div>
+      <div class="row"> 
+        <!--Informacion Personal-->       
+        <div class="col-3">          
+          <img [src]="per.foto" class="w-75 d-inline-block img-fluid" alt="foto-rv" [title]="per.tituloFoto">
+        </div> 
+        <div class="col-9 mt-2">
+          <h3><strong>{{per.nombre}} {{per.apellido}}</strong></h3>
+          <h4><strong>{{per.titulo}}</strong></h4>
+          <h5>{{per.sobreMi}}</h5>
+        </div>        
+        <!-- Trigger/Informacion Personal -->
+        <li class="list-group list-group-horizontal justify-content-end">
+          <button type="button" class="btn btn-secondary btn-sm p-1" data-bs-toggle="modal" data-bs-target="#infoModal">
+            <i class="fa-solid fa-pen fa-l"></i></button>
+        </li>
+        <!-- Modal -->
+        <app-m-info></app-m-info>
+      </div>
+      <hr>
+      <!-- Botonera Acceso Secciones-->        
+      <div class="position-absolute">
+        <a href="#experiencia"><button class="btn btn-outline-warning">Experiencia</button></a>
+        <a href="#educacion"><button class="btn btn-outline-warning">Educacion</button></a>
+        <a href="#habilidades"><button class="btn btn-outline-warning">Habilidades</button></a>
+        <a href="#proyectos"><button class="btn btn-outline-warning">Proyectos</button></a>
+        <a href="#contacto"><button class="btn btn-outline-warning">Contacto</button></a> 
+        <!-- <a class="btn btn-outline-warning" href="#contacto" role="button">Contacto</a> -->
+      </div>
+    </div>
+  </section>

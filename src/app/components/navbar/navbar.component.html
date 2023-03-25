@@ -1,0 +1,27 @@
+<header id="navbar" >
+  <nav class="navbar navbar-expand-lg bg-primary">    
+    <div class="container-fluid">
+        <a class="navbar-brand titulologo1" href="https://argentinaprograma.inti.gob.ar/" target="_blank">
+          <!--Logo AP-->
+          <img src="../assets/img/APLogo.png" width="15%" alt="img-logoAP" tittle="img-logoAP" class="d-inline-block align-align-text-center"> #YoProgramo / 3ra Edición
+        </a>
+        <ul class="list-group list-group-horizontal">
+          <!-- Redes Sociales-->
+          <div id="red" *ngFor="let red of redeS">
+            <li class="list-group-item"><a [class]="red.icono" [href]="red.url" target="_blank"></a></li>
+          </div>            
+          <!-- Trigger/Redes Sociales -->
+          <li id="editRedes" class="list-group-item">
+            <button type="button" class="btn btn-secondary btn-g p-1" data-bs-toggle="modal" data-bs-target="#redesModal">
+              <i class="fa-solid fa-pen fa-l"></i></button>
+          </li>          
+            <!-- Modal -->
+            <app-m-redes></app-m-redes>
+          <!-- Trigger/Login -->
+          <app-login></app-login>
+          <!-- Trigger/Logout -->
+          <app-logout></app-logout>
+        </ul>
+    </div>
+  </nav>
+</header>

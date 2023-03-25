@@ -1,0 +1,48 @@
+<section id="educacion" class="about titulo2">
+    <div class="card p-5 align-text-center">
+      <h2 class="marco1">Educacion</h2>
+      <!-- Trigger/Agregar -->
+      <div id="agregarEdu">
+        <li class="list-group list-group-horizontal justify-content-end">
+          <button type="button" class="btn btn-secondary btn-sm p-1" data-bs-toggle="modal" data-bs-target="#eduModal">
+          <i class="fa-solid fa-plus fa-l"></i></button>
+        </li>
+        <!-- Modal -->
+        <app-m-educacion></app-m-educacion>
+      </div>
+      <!-- Educaciones -->
+      <div id="edu" class="row" *ngFor="let edu of educacioneS">
+        <div class="col-3">
+          <img [src]="edu.img" class="w-50 d-inline-block img-fluid" alt="logo-utn" [title]="edu.titulo">
+          <h6>{{edu.inicio}} | {{edu.fin}}</h6>
+        </div>
+        <div class="col-9">
+          <h3>{{edu.tipo}}</h3>
+          <h4>{{edu.detalle}}</h4>
+          <h6>{{edu.descripcion}}</h6>
+        </div>
+        <!--editEducacion-->
+        <div id="editEdu1"class="row">
+          <div class="container-fluid">
+            <ul class="list-group list-group-horizontal justify-content-end">
+              <!-- Trigger/Editar -->
+              <li class="list-group-item">
+                <button type="button" class="btn btn-secondary btn-sm p-1" data-bs-toggle="modal" data-bs-target="#eduModal">
+                  <i class="fa-solid fa-pen fa-l"></i></button>
+              </li>
+              <!-- Trigger/Eliminar -->
+              <li class="list-group-item">
+                <button type="button" class="btn btn-secondary btn-sm p-1" data-bs-toggle="modal" data-bs-target="#eliminarModal">
+                <i class="fa-solid fa-trash fa-l"></i></button>
+              </li>        
+            </ul>
+          </div>
+        </div> 
+        <hr>
+      </div>       
+      <!-- Regreso Botonera-->  
+      <div class="position-absolute bottom-0 end-0">
+        <a href="#navbar"><button class="btn btn-primary btn-md p-2"><i class="fa-solid fa-arrow-turn-up fa-xl"></i></button></a>                
+      </div>
+    </div>
+  </section>

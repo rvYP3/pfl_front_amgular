@@ -1,0 +1,247 @@
+{
+  "general": {
+    "url": "https://argentinaprograma.inti.gob.ar/",
+    "img": "../assets/img/APLogo.png",
+    "titulo":" #YoProgramo / 3ra Edición",
+    "login":"fa-solid fa-right-to-bracket fa-2xl",
+    "logout":"fa-solid fa-right-from-bracket fa-2xl"
+  },
+  "iconos":{
+    "login":"fa-solid fa-right-to-bracket fa-2xl",
+    "logout":"fa-solid fa-right-from-bracket fa-2xl",
+    "linkedin": "fa-brands fa-linkedin fa-2xl",
+    "github": "fa-brands fa-square-github fa-2xl",
+    "agregar":"fa-solid fa-plus fa-l",
+    "editar": "fa-solid fa-pen fa-l",
+    "eliminar":"fa-solid fa-trash fa-l",
+    "retorno":"fa-solid fa-arrow-turn-up fa-xl",
+    "ubicacion":"fa-sharp fa-solid fa-location-dot fa-xl",
+    "whatsapp":"fa-brands fa-whatsapp fa-xl",
+    "correo":"fa-regular fa-envelope fa-xl",
+    "descarga":"fa-solid fa-file-arrow-down fa-xl"
+  }, 
+  "redes": [
+    {
+      "id": 1,
+      "icono": "fa-brands fa-linkedin fa-2xl",
+      "url": "https://ar.linkedin.com/"
+    },
+    {
+      "id": 2,
+      "icono": "fa-brands fa-square-github fa-2xl",
+      "url": "https://github.com/login"
+    }
+  ],
+  "info": {
+    "banner": "../assets/img/th.png",
+    "tituloBanner": "img-tech",
+    "pen": "fa-solid fa-pen fa-l",
+    "foto": "../assets/img/RV1.png",
+    "tituloFoto": "foto-rv",
+    "nombre": "Ramon",
+    "apellido": "Veiga",
+    "titulo": "Full Stack Developer Jr",
+    "sobreMi": "... 15 años trabajando como Ingeniero de Procesos en la Industria Petrolera Argentina. Profesional, responsable, autodidacta, interes en programacion y desarrollo de aplicaciones"
+  },
+  "experiencias":[
+    {
+        "id":1,
+        "img":"../assets/img/ypf1.png",
+        "titulo":"img-Ypf",
+        "inicio":"2022",
+        "fin":"2023",
+        "puesto":"[Ingeniero de Procesos]",
+        "tarea":"A cargo de las siguientes tareas: seguimiento de crudos procesados por la compañía, desarrollo de bases de datos, manejo de simuladores ad-hoc. Formación de personal en temas vinculados a materias primas y productos. Elaboración de informes de gestión sobre procesamiento, stock, calidad, logística de crudos, producciones Upstream."
+    },
+    {
+        "id":2,
+        "img":"../assets/img/ypf1.png",
+        "titulo":"img-Ypf",
+        "inicio":"2014",
+        "fin":"2022",
+        "puesto":"[Coordinador de Procesos]",
+        "tarea":"A cargo de la Coordinación de Crudos, llevando adelante las siguientes tareas: seguimiento de crudos en la compañía, desarrollo de bases de datos, manejo de simuladores ad-hoc, responsable de Laboratorio y Unidades Piloto. Formación de personal de laboratorio en temas vinculados a la gestión y análisis realizados en el sitio. Elaboración de informes de gestión para la Alta Dirección sobre procesamiento, stock, calidad, logística de crudos, producciones Upstream. Participación en desarrollo de aditivos de uso en Upstream. Integrante del Comité de Seguridad de la Gerencia en la que desarrollo mis tareas."
+    },
+    {
+        "id":3,
+        "img":"../assets/img/ypf1.png",
+        "titulo":"img-Ypf",
+        "inicio":"2011",
+        "fin":"2013",
+        "puesto":"[Analista de Gestion Energetica]",
+        "tarea":"Seguimiento de Presupuesto e Inversiones de Proyectos de Gestión Energética en los Complejos Industriales de YPF. Evaluación del portfolio según importancia y criticidad. Análisis y Evaluación de Proyectos en particular. Auditorías de Energía, con el fin de hallar malos actores y resolver cuellos de botella en las unidades operativas de los Complejos Industriales. Desarrollo y seguimiento de indicadores de gestión y performance. Seguimiento de los objetivos definidos por Gestión Energética dentro del Plan Estratégico de Downstream."
+    },
+    {
+        "id":4,
+        "img":"../assets/img/ypf1.png",
+        "titulo":"img-Ypf",
+        "inicio":"2009",
+        "fin":"2010",
+        "puesto":"[Analista de Proyectos]",
+        "tarea":"Evaluación de cartera de proyectos, asignación de presupuesto anual, reasignaciones de partidas presupuestarias, y seguimiento de Proyectos en la Vicepresidencia Ejecutiva Downstream de YPF. Asignación de capitales a la cartera de proyectos, según el negocio y capacidad de ejecución. Total de proyecto al año: 600 proyectos en cartera. Análisis y Evaluación de Proyectos y obras. Seguimiento y control de las partidas presupuestarias asignadas por proyecto y sector. Participación en la gestión de aprobación y liberación de fondos. Elaboración de resúmenes de gestión ejecutivos."
+    },
+    {
+        "id":5,
+        "img":"../assets/img/ypf1.png",
+        "titulo":"img-Ypf",
+        "inicio":"2003",
+        "fin":"2008",
+        "puesto":"[Ingeniero de Procesos]",
+        "tarea":"Simulación de Procesos en Estado Estacionario (software utilizado: PRO II™, Pipephase™, Aspen Hysys™, Exchanger Design and Rating™). Estudios de Cuellos de Botella en Unidades de Proceso (las unidades estudiadas son las que conforman un Esquema de Refino complejo). Estudio y Chequeo de Redes: agua de enfriamiento, descarga de gases a antorcha, gasoductos. Participación en distintas etapas de ingeniería para la incorporación de nuevas unidades de procesos o Revamp de unidades existentes."
+    },
+    {
+        "id":6,
+        "img":"../assets/img/repsolypf.png",
+        "titulo":"img-repsolYpf",
+        "inicio":"2000",
+        "fin":"2002",
+        "puesto":"[Operador de Planta Piloto]",
+        "tarea":"Evaluación y Testeo de Catalizadores Industriales. Operación y mantenimiento de unidades piloto."
+    },
+    {
+        "id":7,
+        "img":"../assets/img/repsolypf.png",
+        "titulo":"img-repsolYpf",
+        "inicio":"1999",
+        "fin":"2000",
+        "puesto":"[Tecnico de Laboratorio]",
+        "tarea":"Evaluación y Testeo de muestras de crudos y combustibles líquidos. Operación de equipos de laboratorio / Cromatografía en fase gaseosa."
+    }    
+  ],
+  "educaciones":[
+    {
+        "id":1,
+        "img":"../assets/img/utn2.jfif",
+        "titulo":"logo-utn",
+        "inicio":"1995",
+        "fin":"2001",
+        "tipo":"Certificacion Academica",
+        "detalle":"[Ingeniero Quimico]",
+        "descripcion":"Universidad Tecnologica Nacional Facultad Regional La Plata"
+    },
+    {
+        "id":2,
+        "img":"../assets/img/AP3.png",
+        "titulo":"logo-AP",
+        "inicio":"2022",
+        "fin":"actual",
+        "tipo":"Curso AP",
+        "detalle":"[#YoProgramo]",
+        "descripcion":"2da etapa del Plan Argentina Programa"
+    },
+    {
+        "id":3,
+        "img":"../assets/img/AP3.png",
+        "titulo":"logo-AP",
+        "inicio":"2022",
+        "fin":"2022",
+        "tipo":"Curso AP",
+        "detalle":"[#SeProgramar]",
+        "descripcion":"1ra etapa del Plan Argentina Programa"
+    },
+    {
+        "id":4,
+        "img":"../assets/img/acadevor2.png",
+        "titulo":"logo-acadevor",
+        "inicio":"2022",
+        "fin":"2022",
+        "tipo":"Curso Acadevor",
+        "detalle":"[Reportes Profesionales con Power BI Desktop]",
+        "descripcion":"Horas de Clases: 10h 26m"
+    },
+    {
+        "id":5,
+        "img":"../assets/img/acadevor2.png",
+        "titulo":"logo-acadevor",
+        "inicio":"2022",
+        "fin":"2022",
+        "tipo":"Curso Acadevor",
+        "detalle":"[Modelado y Funciones DAX para Power BI Desktop]",
+        "descripcion":"Horas de Clases: 13h 35m"
+    }
+  ],
+  "habilidadesDuras":[
+    {
+        "id":1,
+        "nombre":"VBA",
+        "porcentaje":40
+    },
+    {
+        "id":2,
+        "nombre":"HTML",
+        "porcentaje":25
+    },
+    {
+        "id":3,
+        "nombre":"CSS",
+        "porcentaje":15
+    },
+    {
+        "id":4,
+        "nombre":"JS",
+        "porcentaje":15
+    },
+    {
+        "id":5,
+        "nombre":"Power BI",
+        "porcentaje":20
+    },
+    {
+        "id":6,
+        "nombre":"Ingles",
+        "porcentaje":70
+    }
+  ],
+  "habilidadesBlandas":[
+    {
+        "id":1,
+        "nombre":"Trabajo en Equipo",
+        "porcentaje":60
+    },
+    {
+        "id":2,
+        "nombre":"Comunicacion Asertiva",
+        "porcentaje":50
+    },
+    {
+        "id":3,
+        "nombre":"Adaptabilidad",
+        "porcentaje":60
+    },
+    {
+        "id":4,
+        "nombre":"Resolucion de Problemas",
+        "porcentaje":60
+    },
+    {
+        "id":5,
+        "nombre":"Gestion del Tiempo",
+        "porcentaje":50
+    },
+    {
+        "id":6,
+        "nombre":"Etica-Compromiso-Responsabildiad",
+        "porcentaje":86
+    }
+  ],
+  "proyectos":[
+    {
+        "id":1,
+        "img":"../assets/img/APLogo.png",
+        "titulo":"logo-AP",
+        "inicio":"2022",
+        "fin":"2022",
+        "tipo":"Portfolio Web",
+        "detalle":"#YoProgramo - 3ra Edicion. Desarrollo de aplicacion web full stack de arquitectura distribuida con diseño de interfaz de usuario front end, base de datos de almacenamiento y conexion con APIs para provision de servicio back end."
+    }
+  ],
+  "contactos":[
+    {
+        "id":1,
+        "ciudad":"La Plata (CP:1906)",
+        "provincia":"Buenos Aires",
+        "telefono":"+54 9221 649-4720",
+        "correo":"ramon.veiga1@gmail.com"
+    }
+  ]
+}
